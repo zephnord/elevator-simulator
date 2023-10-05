@@ -42,7 +42,8 @@ int parseInput(std::string startingFloor, std::string floorsInput,
         }
     }
     else {
-        std::cout << "Invalid starting floor number given: " << floor << std::endl << "Elevator services floors " << MIN_FLOOR << " to " << MAX_FLOOR << std::endl;
+        std::cout << "Invalid starting floor number given: " << floor << std::endl <<
+        "Elevator services floors " << MIN_FLOOR << " to " << MAX_FLOOR << std::endl;
         return -1;        
     }
     floorsToVisit.push_back(startingFloorNum);
