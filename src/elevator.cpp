@@ -38,6 +38,10 @@ void Elevator::visitFloors() {
     _floorsVisited.push_back(_currentFloor);
     for (int floor : _floorsToVisit) {
         int timeToNextFloor = abs(_currentFloor - floor) * _TIME_TO_TRAVEL;
+        // Special case to not include travel time of non-existent floor 13
+        if ((_currentFloor < 13 && 13 < floor) || (_currentFloor > 13 && 13 > floor)) {
+            timeToNextFloor -= 10;
+        }
         _travelTime += timeToNextFloor;
 
         _currentFloor = floor;
