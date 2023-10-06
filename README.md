@@ -2,7 +2,7 @@
 
 This is a command line program to simulate a very simple elevator.
 
-This elevator assumes it is always called to the starting floor from a lower floor, and therefor services floors higher than the starting floors in ascending order, and then floors lower than the starting floor in descending order. This utilizes the SCAN Disk Scheduling Algorithm.
+This elevator assumes it is always called to the starting floor from a lower floor, and therefore services floors higher than the starting floors in ascending order, and then floors lower than the starting floor in descending order. This utilizes the SCAN Disk Scheduling Algorithm.
 
 This elevator also only services floors 0-202 inclusively.
 
